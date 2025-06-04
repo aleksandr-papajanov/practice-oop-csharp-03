@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticeOOPCSharp01
+namespace PracticeOOPCSharp01.Infrastructure
 {
     internal abstract class Pokemon
     {
         private readonly Random _random = new Random();
-        private string _name;
+        private string _name = string.Empty;
         private int _level = 1;
 
         public string Name
@@ -43,8 +43,10 @@ namespace PracticeOOPCSharp01
         public ElementType Type { get; }
         public List<Attack> Attacks { get; }
 
-        public Pokemon(ElementType type, List<Attack> attacks)
+        public Pokemon(string name, int level, ElementType type, List<Attack> attacks)
         {
+            Name = name;
+            Level = level;
             Type = type;
             Attacks = attacks.Where(a => a.Type == type).ToList();
         }
@@ -67,7 +69,6 @@ namespace PracticeOOPCSharp01
         public virtual void Attack()
         {
             Console.WriteLine($"{Name} is attacking!");
-
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Available attacks:");
 
@@ -83,6 +84,7 @@ namespace PracticeOOPCSharp01
             {
                 Console.Write($"Invalid choice. Please choose a number between 1 and {Attacks.Count}: ");
             }
+
             Console.ResetColor();
 
             Attacks[choice - 1].Use(Level);
@@ -104,9 +106,7 @@ namespace PracticeOOPCSharp01
                 _ => ConsoleColor.White
             };
 
-
             Console.WriteLine($"Pokemon: {Name}, Level: {Level}, Type: {Type}");
-
             Console.ResetColor();
         }
     }

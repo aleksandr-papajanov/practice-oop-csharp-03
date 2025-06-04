@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PracticeOOPCSharp01.Pokemons
 {
-    internal class Squirtle : WaterPokemon
+    internal class FirePokemon : Pokemon
     {
-        public Squirtle(string name, int level, List<Attack> attacks) : base(name, level, attacks)
+        public FirePokemon(string name, int level, List<Attack> attacks) : base(name, level, ElementType.Fire, attacks)
         {
         }
     }

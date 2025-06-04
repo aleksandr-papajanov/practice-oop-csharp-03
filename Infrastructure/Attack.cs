@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PracticeOOPCSharp01
+namespace PracticeOOPCSharp01.Infrastructure
 {
     internal class Attack
     {

@@ -1,4 +1,5 @@
-﻿using PracticeOOPCSharp01.Pokemons;
+﻿using PracticeOOPCSharp01.Infrastructure;
+using PracticeOOPCSharp01.Pokemons;
 
 namespace PracticeOOPCSharp01
 {
