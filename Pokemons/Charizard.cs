@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PracticeOOPCSharp01.Pokemons
 {
-    internal class Pikachu : ElectricPokemon, IEvolvable
+    internal class Charizard : WaterPokemon, IEvolvable
     {
-        public Pikachu(string name, List<Attack> attacks) : base(name, 23, attacks)
+        public Charizard(string name, List<Attack> attacks) : base(name, 65, attacks)
         {
         }
 
@@ -18,7 +18,7 @@ namespace PracticeOOPCSharp01.Pokemons
             var oldName = this.Name;
 
             this.Level += 10;
-            this.Name = "Raichu";
+            this.Name = "Megacharizard";
 
             Console.WriteLine($"{oldName} is evolving... Now it's {this.Name}! Level {this.Level}");
         }

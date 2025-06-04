@@ -21,21 +21,21 @@ namespace PracticeOOPCSharp01
                 new Attack("Thunderbolt", ElementType.Electric, 60)
             };
 
-            List<Pokemon> pokemons = pokemons = new List<Pokemon>
+            List<Pokemon> pokemons = new List<Pokemon>
             {
-                new Pikachu("Zapster", 12, attacks),
-                new Squirtle("Tide", 30, attacks),
-                new WaterPokemon("Blazer", 53, attacks),
-                new Charmander("Smolder", 22, attacks),
-                new FirePokemon("Cinder", 35, attacks),
-                new Pikachu("Boltz", 5, attacks),
-                new ElectricPokemon("Wattson", 41, attacks),
-                new Squirtle("Marina", 50, attacks),
-                new Charmander("Flareon", 60, attacks)
+                new Pikachu("Zapster", attacks),
+                new Squirtle("Tide", attacks),
+                new Charizard("Blazer", attacks),
+                new Charmander("Smolder", attacks),
+                new Flareon("Cinder", attacks),
+                new Pikachu("Boltz", attacks),
+                new Electabuzz("Wattson", attacks), 
+                new Squirtle("Marina", attacks),
+                new Charmander("Flareon", attacks)    
             };
 
 
-            foreach(var pokemon in pokemons)
+            foreach (var pokemon in pokemons)
             {
                 pokemon.SayHi();
 

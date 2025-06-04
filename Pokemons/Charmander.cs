@@ -9,7 +9,7 @@ namespace PracticeOOPCSharp01.Pokemons
 {
     internal class Charmander : FirePokemon
     {
-        public Charmander(string name, int level, List<Attack> attacks) : base(name, level, attacks)
+        public Charmander(string name, List<Attack> attacks) : base(name, 34, attacks)
         {
         }
     }

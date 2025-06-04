@@ -106,7 +106,7 @@ namespace PracticeOOPCSharp01.Infrastructure
                 _ => ConsoleColor.White
             };
 
-            Console.WriteLine($"Pokemon: {Name}, Level: {Level}, Type: {Type}");
+            Console.WriteLine($"Pokemon: {Name}, Species: {this.GetType().Name}, Level: {Level}, Type: {Type}");
             Console.ResetColor();
         }
     }

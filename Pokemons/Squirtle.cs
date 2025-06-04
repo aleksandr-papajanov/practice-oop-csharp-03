@@ -9,7 +9,7 @@ namespace PracticeOOPCSharp01.Pokemons
 {
     internal class Squirtle : WaterPokemon
     {
-        public Squirtle(string name, int level, List<Attack> attacks) : base(name, level, attacks)
+        public Squirtle(string name, List<Attack> attacks) : base(name, 77, attacks)
         {
         }
     }

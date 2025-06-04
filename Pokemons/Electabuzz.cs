@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace PracticeOOPCSharp01.Pokemons
 {
-    abstract class ElectricPokemon : Pokemon
+    internal class Electabuzz : ElectricPokemon
     {
-        public ElectricPokemon(string name, int level, List<Attack> attacks) : base(name, level, ElementType.Electric, attacks)
+        public Electabuzz(string name, List<Attack> attacks) : base(name, 34, attacks)
         {
-
         }
     }
 }

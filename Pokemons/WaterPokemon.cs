@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace PracticeOOPCSharp01.Pokemons
 {
-    internal class WaterPokemon : Pokemon
+    abstract class WaterPokemon : Pokemon
     {
         public WaterPokemon(string name, int level, List<Attack> attacks) : base(name, level, ElementType.Water, attacks)
         {
-
         }
     }
 }
